@@ -5,12 +5,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Booking Payments - Admin</title>
-   </head>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/styles.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/table.css">
+</head>
 <body>
   <header>
       <div class="header-content">
           <div class="navbar">
-               <a href="/index" class="btn" id="home-btn">Home</a>
+              <h1 class="logo">rent&drive</h1>
+              <a href="/index" class="btn" id="home-btn">Home</a>
           </div>
           </div>
           <div class="navbar navbar-right">
