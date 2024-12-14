@@ -6,11 +6,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Complete profile</title>
-    </head>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/styles.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/form.css">
+</head>
 <body>
     <header>
         <div class="header-content">
             <div class="navbar">
+                <h1 class="logo">rent&drive</h1>
                 <a href="/index" class="btn" id="home-btn">Home</a>
             </div>
             </div>
@@ -34,25 +37,22 @@
             <form:input path="email" id="email" class="input" disabled="true" />
 
             <label class="label" for="firstName">Enter First Name:</label>
-            <form:input path="firstName" id="firstName" class="input" placeholder="First Name" />
+            <form:input path="firstName" id="firstName" class="input" placeholder="First Name" required="true"/>
 
             <label class="label" for="lastName">Enter Last Name:</label>
-            <form:input path="lastName" id="lastName" class="input" placeholder="Last Name" />
+            <form:input path="lastName" id="lastName" class="input" placeholder="Last Name" required="true"/>
 
             <label class="label" for="address">Enter Address:</label>
-            <form:input path="address" id="address" class="input" placeholder="Address" />
+            <form:input path="address" id="address" class="input" placeholder="Address" required="true"/>
 
             <label class="label" for="mobile">Enter Mobile Number:</label>
-            <form:input path="mobile" id="mobile" class="input" placeholder="Mobile Number" />
-
-            <label class="label" for="status">Enter Status:</label>
-            <form:input path="status" id="status" class="input" placeholder="Status" />
+            <form:input path="mobile" id="mobile" class="input" placeholder="Mobile Number" required="true"/>
 
             <label class="label" for="license">Enter Driving License Number:</label>
-            <form:input path="license" id="license" class="input" placeholder="License Driving Number" />
+            <form:input path="license" id="license" class="input" placeholder="License Driving Number" required="true"/>
 
             <label class="label" for="expiryDate">Enter Expiry Date:</label>
-            <form:input path="expiryDate" id="expiryDate" class="input" placeholder="Expiry Date" />
+            <form:input path="expiryDate" id="expiryDate" class="input" placeholder="Expiry Date" required="true"/>
 
             <button class="submit-button btn" type="submit">Submit</button>
             <button class="reset-button btn" type="reset">Reset</button>
